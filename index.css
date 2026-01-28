@@ -1,0 +1,55 @@
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+--primary:#2c3e50;
+--secondary:#3498db;
+--accent:#e74c3c;
+--bg:#ecf0f1;
+--white:#fff;
+--shadow:0 2px 10px rgba(0,0,0,.1)
+}
+body{font-family:Segoe UI;background:var(--bg);color:#333}
+html{scroll-behavior:smooth}
+
+/* NAV */
+.navbar{background:var(--primary);position:sticky;top:0;z-index:10}
+.nav-container{max-width:1200px;margin:auto;padding:1rem 2rem;display:flex;justify-content:space-between;align-items:center}
+.logo{color:var(--white);font-weight:700;font-size:1.5rem}
+.nav-links{list-style:none;display:flex;gap:2rem}
+.nav-links a{color:var(--white);text-decoration:none;font-weight:500}
+.nav-links a.active{color:var(--secondary);font-weight:700}
+
+/* HEADER */
+.header{text-align:center;padding:4rem 1rem;background:linear-gradient(135deg,var(--primary),var(--secondary));color:white}
+.header h1{font-size:2.5rem}
+.header p{max-width:600px;margin:auto;opacity:.9}
+
+/* MAIN */
+.container{max-width:1200px;margin:auto;padding:2rem}
+
+/* FILTER */
+.filter-section{display:flex;gap:1rem;justify-content:center;margin-bottom:3rem;flex-wrap:wrap}
+.filter-btn{padding:.7rem 1.5rem;border-radius:25px;border:2px solid var(--primary);background:white;font-weight:600;cursor:pointer;transition:.3s}
+.filter-btn.active,.filter-btn:hover{background:var(--secondary);color:white;border-color:var(--secondary);transform:translateY(-2px)}
+
+/* GRID */
+.assignments-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:2rem}
+
+/* CARD */
+.assignment-card{background:white;border-radius:10px;padding:2rem;display:flex;flex-direction:column;border-left:5px solid var(--secondary);box-shadow:var(--shadow);transition:.3s}
+.assignment-card:hover{transform:translateY(-12px) scale(1.01);border-left-color:var(--accent)}
+.assignment-header{display:flex;justify-content:space-between;margin-bottom:1rem}
+.badge{background:var(--secondary);color:white;padding:.3rem .8rem;border-radius:20px;font-size:.75rem;font-weight:700}
+.assignment-card p{flex-grow:1;color:#666;margin-bottom:1.5rem}
+.btn-view{text-decoration:none;background:var(--secondary);color:white;text-align:center;padding:.75rem;border-radius:5px;font-weight:600;transition:.3s}
+.btn-view:hover{background:var(--accent);transform:translateY(-3px)}
+
+/* FOOTER */
+.footer{text-align:center;background:var(--primary);color:white;padding:2rem}
+
+/* SCROLL BAR */
+.scroll-progress{position:fixed;bottom:0;left:0;height:4px;width:0;background:linear-gradient(90deg,var(--secondary),var(--accent));z-index:999}
+
+@media(max-width:768px){
+.assignments-grid{grid-template-columns:1fr}
+.nav-container{flex-direction:column;gap:1rem}
+}

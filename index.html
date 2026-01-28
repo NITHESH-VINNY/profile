@@ -1,247 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Assignments - Nithesh Vinny</title>
-  <link rel="stylesheet" href="assignments.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Assignments - Nithesh Vinny</title>
+<link rel="stylesheet" href="index.css">
+
 </head>
+
 <body>
-  <!-- NAVBAR -->
-  <nav class="navbar">
-    <div class="nav-container">
-      <div class="logo">NITHESH VINNY</div>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="index.html#about">About</a></li>
-        <li><a href="index.html#skills">Skills</a></li>
-        <li><a href="#" class="active">Assignments</a></li>
-      </ul>
-    </div>
-  </nav>
 
-  <!-- HEADER -->
-  <header class="header">
-    <h1>My Assignments</h1>
-    <p>A collection of JavaScript, HTML, and CSS assignments showcasing fundamental web development concepts</p>
-  </header>
+<nav class="navbar">
+  <div class="nav-container">
+    <div class="logo">NITHESH VINNY</div>
+    <ul class="nav-links">
+      <li><a>Home</a></li>
+      <li><a>About</a></li>
+      <li><a>Skills</a></li>
+      <li><a class="active">Assignments</a></li>
+    </ul>
+  </div>
+</nav>
 
-  <!-- MAIN CONTENT -->
-  <main class="container">
-    
-    <!-- FILTER BUTTONS -->
-    <div class="filter-section">
-      <button class="filter-btn active" data-filter="all">All</button>
-      <button class="filter-btn" data-filter="javascript">JavaScript</button>
-      <button class="filter-btn" data-filter="html">HTML</button>
-      <button class="filter-btn" data-filter="documents">Documents</button>
-    </div>
+<header class="header">
+  <h1>My Assignments</h1>
+  <p>JavaScript, HTML & CSS practice files</p>
+</header>
 
-    <!-- JAVASCRIPT SECTION -->
-    <section class="assignments-section">
-      <h2 class="section-title">📜 JavaScript Files</h2>
-      <div class="assignments-grid" id="js-grid">
-        <div class="assignment-card" data-category="javascript">
-          <div class="assignment-header">
-            <h3>array.js</h3>
-            <span class="badge">JavaScript</span>
-          </div>
-          <p>Array Methods - Demonstrates various array manipulation techniques.</p>
-         <a href="assignment/array.js" class="btn-view" target="_blank">View File</a>
-        </div>
+<main class="container">
 
-        <div class="assignment-card" data-category="javascript">
-          <div class="assignment-header">
-            <h3>conditions.js</h3>
-            <span class="badge">JavaScript</span>
-          </div>
-          <p>Conditional Statements - Exploration of if, else, and else-if statements.</p>
-         <a href="assignment/conditions.js" class="btn-view" target="_blank">View File</a>
-        </div>
+<div class="filter-section">
+  <button class="filter-btn active" data-filter="all">All</button>
+  <button class="filter-btn" data-filter="javascript">JavaScript</button>
+  <button class="filter-btn" data-filter="html">HTML</button>
+  <button class="filter-btn" data-filter="documents">Documents</button>
+</div>
 
-        <div class="assignment-card" data-category="javascript">
-          <div class="assignment-header">
-            <h3>else.js</h3>
-            <span class="badge">JavaScript</span>
-          </div>
-          <p>Else Statements - Practical examples of else statement logic.</p>
-         <a href="assignment/else.js" class="btn-view" target="_blank">View File</a>
-        </div>
+<div class="assignments-grid">
 
-        <div class="assignment-card" data-category="javascript">
-          <div class="assignment-header">
-            <h3>elseif.js</h3>
-            <span class="badge">JavaScript</span>
-          </div>
-          <p>Else-If Statements - Multiple condition handling with else-if.</p>
-         <a href="assignment/elseif.js" class="btn-view" target="_blank">View File</a>
-        </div>
+<!-- JAVASCRIPT FILES (15) -->
+<script>
+const jsFiles=[
+"array.js","conditions.js","else.js","elseif.js","if.js",
+"nestedif.js","for.js","while.js","dowhile.js","loops.js",
+"functions.js","object.js","switch.js","index.js","index1.js"
+];
+</script>
 
-        <div class="assignment-card" data-category="javascript">
-          <div class="assignment-header">
-            <h3>if.js</h3>
-            <span class="badge">JavaScript</span>
-          </div>
-          <p>If Statements - Basic conditional logic and decision-making.</p>
-         <a href="assignment/if.js" class="btn-view" target="_blank">View File</a>
-        </div>
+<!-- HTML FILES -->
+<div class="assignment-card" data-category="html">
+<div class="assignment-header"><h3>javascript.html</h3><span class="badge">HTML</span></div>
+<p>JavaScript interactive demo.</p>
+<a class="btn-view" href="assignment/javascript.html" target="_blank">View Demo</a>
+</div>
 
-        <div class="assignment-card" data-category="javascript">
-          <div class="assignment-header">
-            <h3>nestedif.js</h3>
-            <span class="badge">JavaScript</span>
-          </div>
-          <p>Nested If Statements - Complex conditional structures.</p>
-         <a href="assignment/nestedif.js" class="btn-view" target="_blank">View File</a>
-        </div>
+<div class="assignment-card" data-category="html">
+<div class="assignment-header"><h3>eventlistener.html</h3><span class="badge">HTML</span></div>
+<p>Event listener and DOM manipulation.</p>
+<a class="btn-view" href="assignment/eventlistener.html" target="_blank">View Demo</a>
+</div>
 
-        <div class="assignment-card" data-category="javascript">
-          <div class="assignment-header">
-            <h3>for.js</h3>
-            <span class="badge">JavaScript</span>
-          </div>
-          <p>For Loops - Iteration with for loop structures.</p>
-         <a href="assignment/for.js" class="btn-view" target="_blank">View File</a>
-        </div>
+<!-- DOCUMENT -->
+<div class="assignment-card" data-category="documents">
+<div class="assignment-header"><h3>Assignment_notes.pdf</h3><span class="badge">PDF</span></div>
+<p>Complete assignment notes.</p>
+<a class="btn-view" href="assignment/Assignment_notes.pdf" target="_blank">View PDF</a>
+</div>
 
-        <div class="assignment-card" data-category="javascript">
-          <div class="assignment-header">
-            <h3>while.js</h3>
-            <span class="badge">JavaScript</span>
-          </div>
-          <p>While Loops - Iteration with while loop structures.</p>
-         <a href="assignment/while.js" class="btn-view" target="_blank">View File</a>
-        </div>
+</div>
+</main>
 
-        <div class="assignment-card" data-category="javascript">
-          <div class="assignment-header">
-            <h3>dowhile.js</h3>
-            <span class="badge">JavaScript</span>
-          </div>
-          <p>Do-While Loops - Iteration with do-while loop structures.</p>
-         <a href="assignment/dowhile.js" class="btn-view" target="_blank">View File</a>
-        </div>
+<footer class="footer">© 2026 Nithesh Vinny</footer>
 
-        <div class="assignment-card" data-category="javascript">
-          <div class="assignment-header">
-            <h3>loops.js</h3>
-            <span class="badge">JavaScript</span>
-          </div>
-          <p>Loop Structures - Comprehensive study of all loop patterns.</p>
-         <a href="assignment/loops.js" class="btn-view" target="_blank">View File</a>
-        </div>
+<script src="index.js">
 
-        <div class="assignment-card" data-category="javascript">
-          <div class="assignment-header">
-            <h3>functions.js</h3>
-            <span class="badge">JavaScript</span>
-          </div>
-          <p>Functions - Deep dive into declarations, expressions, and parameters.</p>
-         <a href="assignment/functions.js" class="btn-view" target="_blank">View File</a>
-        </div>
+</script>
 
-        <div class="assignment-card" data-category="javascript">
-          <div class="assignment-header">
-            <h3>object.js</h3>
-            <span class="badge">JavaScript</span>
-          </div>
-          <p>Objects & Data Structures - Object creation and OOP principles.</p>
-         <a href="assignment/object.js" class="btn-view" target="_blank">View File</a>
-        </div>
-
-        <div class="assignment-card" data-category="javascript">
-          <div class="assignment-header">
-            <h3>switch.js</h3>
-            <span class="badge">JavaScript</span>
-          </div>
-          <p>Switch Statements - Alternative conditional logic using switch cases.</p>
-         <a href="assignment/switch.js" class="btn-view" target="_blank">View File</a>
-        </div>
-
-        <div class="assignment-card" data-category="javascript">
-          <div class="assignment-header">
-            <h3>index.js</h3>
-            <span class="badge">JavaScript</span>
-          </div>
-          <p>Practice Scripts - Various practice and test files.</p>
-         <a href="assignment/index.js" class="btn-view" target="_blank">View File</a>
-        </div>
-
-        <div class="assignment-card" data-category="javascript">
-          <div class="assignment-header">
-            <h3>index1.js</h3>
-            <span class="badge">JavaScript</span>
-          </div>
-          <p>Practice Scripts - Additional practice and test files.</p>
-         <a href="assignment/index1.js" class="btn-view" target="_blank">View File</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- HTML SECTION -->
-    <section class="assignments-section">
-      <h2 class="section-title">🌐 HTML Files</h2>
-      <div class="assignments-grid" id="html-grid">
-        <div class="assignment-card" data-category="html">
-          <div class="assignment-header">
-            <h3>javascript.html</h3>
-            <span class="badge">HTML + JS</span>
-          </div>
-          <p>JavaScript Interactive Demo - Interactive HTML page demonstrating JavaScript concepts.</p>
-         <a href="assignment/javascript.html" class="btn-view" target="_blank">View Demo</a>
-        </div>
-
-        <div class="assignment-card" data-category="html">
-          <div class="assignment-header">
-            <h3>eventlistener.html</h3>
-            <span class="badge">HTML + JS</span>
-          </div>
-          <p>Event Listener Examples - Practical examples of event listeners and DOM manipulation.</p>
-         <a href="assignment/eventlistener.html" class="btn-view" target="_blank">View Demo</a>
-        </div>
-
-        <div class="assignment-card" data-category="html">
-          <div class="assignment-header">
-            <h3>assignments.css</h3>
-            <span class="badge">CSS</span>
-          </div>
-          <p>Stylesheet - CSS styling for the assignments page.</p>
-         <a href="assignments.css" class="btn-view" target="_blank">View File</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- DOCUMENTS SECTION -->
-    <section class="assignments-section">
-      <h2 class="section-title">📄 Documents</h2>
-      <div class="assignments-grid" id="docs-grid">
-        <div class="assignment-card" data-category="documents">
-          <div class="assignment-header">
-            <h3>Assignment_notes.docx</h3>
-            <span class="badge">Documentation</span>
-          </div>
-          <p>Comprehensive notes covering all assignments with concepts and explanations.</p>
-         <a href="assignmentAssignment_notes.docx" class="btn-view" target="_blank" download>📄 Download</a>
-        </div>
-
-        <div class="assignment-card" data-category="documents">
-          <div class="assignment-header">
-            <h3>Assignment_notes.pdf</h3>
-            <span class="badge">Documentation</span>
-          </div>
-          <p>Comprehensive notes covering all assignments with concepts and explanations.</p>
-         <a href="assignmentAssignment_notes.pdf" class="btn-view" target="_blank">📋 View PDF</a>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- FOOTER -->
-  <footer class="footer">
-    <p>&copy; 2026 Nithesh Vinny | All Assignments</p>
-  </footer>
-
-  <script src="assignments.js"></script>
 </body>
 </html>
